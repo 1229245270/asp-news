@@ -1,4 +1,3 @@
 # asp-news
 asp制作的新闻类网站
-实现新闻，用户的增查改删。
-![image](http://github.com/1229245270/asp-news/tree/master/images/1.png)
+具体项目界面效果可查看说明文档
