@@ -1,0 +1,162 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/Top.master" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    <link href="<%= Page.ResolveClientUrl("~/css/AdminCss.css") %>" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server"></asp:ContentPlaceHolder>
+
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="container">
+    <div class="left">
+    <div class="slideshow">
+        <div class="slidebox">
+        <a href="#"><img src="<%= Page.ResolveClientUrl("~/images/HomePageImages/img1.png") %>" class="images" /></a>
+        <a href="#"><img src="<%= Page.ResolveClientUrl("~/images/HomePageImages/img2.png") %>" class="images" /></a>
+        <a href="#"><img src="<%= Page.ResolveClientUrl("~/images/HomePageImages/img3.jpg") %>" class="images" /></a>
+        <a href="#"><img src="<%= Page.ResolveClientUrl("~/images/HomePageImages/img4.jpg") %>" class="images" /></a>
+        <div class="clearfloat"></div>
+        </div>
+        <ol>      
+        <li class="liaction" data-value="0"></li>
+        <li data-value="1"></li>
+        <li data-value="2"></li>
+        <li data-value="3"></li>
+        </ol>
+        <a class="btn btn-left" id="btn-left"><</a>
+        <a class="btn btn-right" id="btn-right">></a>
+
+    </div>
+    <script type="text/javascript">
+        var index = 0;
+        var thisa = $(".slidebox a");
+        var thisli = $(".slideshow ol li");
+        var thisleft = $(".slideshow .btn-left");
+        var thisright = $(".slideshow .btn-right");
+
+        function toleft(index) {
+            thisa.eq(index).fadeIn(100);
+            thisa.eq(index).next().fadeOut(100);
+            thisli.removeClass("liaction");
+            thisli.eq(index).addClass("liaction");
+            if (index == thisa.length-1) {
+                thisa.eq(0).fadeOut(100);
+            }
+        }
+
+        function toright(index) {
+            thisa.eq(index).fadeIn(100);
+            thisa.eq(index).prev().fadeOut(100);
+            thisli.removeClass("liaction");
+            thisli.eq(index).addClass("liaction");
+            if (index == 0) {
+                thisa.eq(thisa.length - 1).fadeOut(100);
+            }
+        }
+
+        function switchli(index) {
+            thisli.removeClass("liaction");
+            thisli.eq(index).addClass("liaction");
+        }
+
+        //左按钮点击事件
+        thisleft.on("click", function () {
+            index--;
+            if (index < 0) index = thisa.length - 1;
+            toleft(index);
+        })
+
+        //右按钮点击事件
+        thisright.on("click", function () {
+            index++;
+            if (index > thisa.length - 1) index = 0;
+            toright(index);
+        })
+
+        //下标点击事件
+        thisli.on("click", function () {
+            var thisdata = $(this).attr("data-value");
+            thisa.eq(0).fadeOut(1);     //点击时先去除叠加的图片，否则点击后几项时无法正常显示
+            thisa.eq(1).fadeOut(1);
+            thisa.eq(2).fadeOut(1);
+            thisa.eq(3).fadeOut(1);
+            if (thisdata != index) {
+                thisa.eq(thisdata).fadeIn(100); 
+                thisa.eq(index).fadeOut(100);
+                thisli.eq(index).removeClass("liaction");
+                thisli.eq(thisdata).addClass("liaction");
+                index = thisdata;
+            }
+        })
+
+        //图片自动轮播
+        function showtime() {
+            index++;
+            if (index < thisa.length) {
+                toright(index);
+                switchli(index);
+            }
+            if (index > thisa.length - 1) {
+                index = 0;
+                thisa.eq(index).fadeIn(100);
+                thisa.eq(thisa.length - 1).fadeOut(100);
+                switchli(index);
+            }
+        }
+        goshow=setInterval(showtime, 3000);
+
+        $(".btn").on("mouseover", function () {
+            clearInterval(goshow);
+        })
+        $(".btn").on("mouseout", function () {
+            goshow=setInterval(showtime,3000);
+        })
+        thisli.on("mouseover", function () {
+            clearInterval(goshow);
+        })
+        thisli.on("mouseout", function () {
+            goshow=setInterval(showtime,3000);
+        })
+                
+    </script>
+    </div>
+    <div class="right">
+        <a class="notice">管理员页面</a>
+        <a id="block1" class="tblock" href="<%= Page.ResolveClientUrl("~/AdminHome/Page.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/AdminImages/order.png") %>" />文章管理 ></a>
+        <a id="block2" class="tblock" href="<%= Page.ResolveClientUrl("~/AdminHome/Discuss.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/AdminImages/message.png") %>" />评论管理 ></a>
+        <a id="block3" class="tblock" href="<%= Page.ResolveClientUrl("~/AdminHome/User.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/AdminImages/user.png") %>" />用户管理 ></a>
+    </div>
+    <div class="clearfloat"></div>
+    <div class="admincentent">
+        <div class="adminleft">
+            <ul class="leftul">
+              <li class="leftli">
+                <a class="lefta" href="<%= Page.ResolveClientUrl("~/AdminHome/Page.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/AdminImages/order.png") %>" />文章管理<img src="<%= Page.ResolveClientUrl("~/images/AdminImages/right-circle.png") %>" /></a>
+                <ul>
+                    <li><a href="<%= Page.ResolveClientUrl("~/AdminHome/AddPage.aspx") %>">新建文章</a></li>
+                    <li><a href="<%= Page.ResolveClientUrl("~/AdminHome/Page.aspx") %>">修改文章</a></li>
+                    <li><a href="<%= Page.ResolveClientUrl("~/AdminHome/Page.aspx") %>">删除文章</a></li>
+                </ul>
+              </li>
+              <li class="leftli">
+                <a class="lefta" href="<%= Page.ResolveClientUrl("~/AdminHome/Discuss.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/AdminImages/message.png") %>" />评论管理<img src="<%= Page.ResolveClientUrl("~/images/AdminImages/right-circle.png") %>" /></a>
+                <ul>
+                    <li><a href="<%= Page.ResolveClientUrl("~/AdminHome/AlterDiscuss.aspx") %>">新建评论</a></li>
+                    <li><a href="<%= Page.ResolveClientUrl("~/AdminHome/Discuss.aspx") %>">修改评论</a></li>
+                    <li><a href="<%= Page.ResolveClientUrl("~/AdminHome/Discuss.aspx") %>">删除评论</a></li>
+                </ul>
+              </li>
+              <li class="leftli">
+                <a class="lefta" href="<%= Page.ResolveClientUrl("~/AdminHome/User.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/AdminImages/user.png") %>" />用户管理</a>
+              </li>
+            </ul>
+        </div>
+        
+        <div class="adminright">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server"></asp:ContentPlaceHolder>
+        </div>
+        <div class="clearfloat"></div>
+    </div>
+</div>
+<div class="foot"></div>
+</asp:Content>
+

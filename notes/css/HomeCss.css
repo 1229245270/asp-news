@@ -1,0 +1,362 @@
+﻿.container {
+    margin: 0 auto 0 auto;
+    width: 1000px;
+}
+
+    .container .left {
+        width: 660px;
+        float: left;
+        margin-right: 40px;
+    }
+
+.left .slideshow {
+    width: 660px;
+    height: 270px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .left .slideshow .slidebox {
+        width: 2640px;
+        height: 270px;
+    }
+
+        .left .slideshow .slidebox a {
+            display: block;
+            width: 660px;
+            height: 270px;
+            float: left;
+        }
+
+            .left .slideshow .slidebox a img {
+                width: 660px;
+                height: 270px;
+            }
+
+    .left .slideshow ol {
+        width: 55px;
+        height: 20px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -27px;
+    }
+
+        .left .slideshow ol li {
+            float: left;
+            font-size: 18px;
+            line-height: 20px;
+            margin-left: 11px;
+            list-style: disc;
+        }
+
+            .left .slideshow ol li:first-child {
+                margin-left: 20px;
+            }
+
+.liaction {
+    color: red;
+}
+
+.left .slideshow .btn {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: rgba(0, 0, 0,.4);
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.left .slideshow .btn-left {
+    left: 0px;
+}
+
+.left .slideshow .btn-right {
+    right: 0px;
+}
+
+.left .leftcontent {
+    padding-top: 15px;
+    width: 660px;
+}
+
+    .left .leftcontent .leftbox {
+        width: 660px;
+        padding: 30px 0 30px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+.leftbox .notepage {
+    width: 490px;
+    float: left;
+    margin-right: 20px;
+}
+
+    .leftbox .notepage .notetitle {
+        display: block;
+        width: 490px;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2f2f2f;
+        text-decoration-line: none;
+        margin-bottom: 5px;
+    }
+
+        .leftbox .notepage .notetitle:hover {
+            text-decoration-line: underline;
+        }
+
+    .leftbox .notepage .notecontent {
+        display: block;
+        width: 490px;
+        line-height: 24px;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .leftbox .notepage .notefoot {
+        width: 490px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+.notefoot a {
+    display: block;
+    height: 20px;
+    text-decoration-line: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    float: left;
+    margin-right: 14px;
+}
+
+.notefoot .footname {
+}
+
+.notefoot .footcomment {
+}
+
+    .notefoot .footcomment img {
+        padding: 5px 3px 3px 0;
+        width: 12px;
+        height: 12px;
+        float: left;
+    }
+
+.notefoot .footgetlike {
+}
+
+    .notefoot .footgetlike img {
+        padding: 4px 3px 4px 0;
+        width: 12px;
+        height: 12px;
+        float: left;
+    }
+
+.notefoot .footdate {
+    float: right;
+    margin: 0;
+}
+
+.leftbox .footimg {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+}
+
+.leftbox img {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+.leftcontent .page {
+    height: 30px;
+    width: 465px;
+    padding: 10px 195px 30px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+}
+
+    .leftcontent .page .pagenum {
+        width: 180px;
+        float: left;
+        height: 30px;
+        display: block;
+    }
+
+    .leftcontent .page .pagebut {
+        display: block;
+        float: left;
+        margin: auto;
+        height: 30px;
+        width: 80px;
+        color: #2f2f2f;
+        font-size: 13px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        color: #38f;
+        background-color: #fff;
+        margin-left: 10px;
+    }
+
+        .leftcontent .page .pagebut:hover {
+            background-color: aliceblue;
+            border: 1px solid #666;
+        }
+
+
+.container .right {
+    float: left;
+    width: 300px;
+}
+
+.right .notice {
+    position: relative;
+    top: -20px;
+    display: block;
+    background-image: url(../images/HomePageImages/notice.png);
+    width: 220px;
+    height: 170px;
+    padding: 40px 40px 40px 40px;
+}
+
+    .right .notice .notitle {
+        display: block;
+        width: 220px;
+        line-height: 40px;
+        font-size: 20px;
+        color: #333;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+
+    .right .notice .nocontent {
+        display: block;
+        width: 220px;
+        color: #333;
+        font-size: 13px;
+        line-height: 24px;
+    }
+
+.right .tblock {
+    display: block;
+    line-height: 50px;
+    width: 260px;
+    height: 50px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    padding-left: 40px;
+    color: rgba(0,0,0,0.7);
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: none;
+}
+
+.right #block1 {
+    background-image: url(../images/HomePageImages/tblock1.png);
+}
+
+.right #block2 {
+    background-image: url(../images/HomePageImages/tblock2.png);
+}
+
+.right #block3 {
+    background-image: url(../images/HomePageImages/tblock3.png);
+}
+
+.right .ad img {
+    width: 300px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.right .recommend {
+    width: 300px;
+    margin: 20px 0 20px 0;
+}
+
+    .right .recommend .retop {
+        width: 300px;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+
+        .right .recommend .retop .releft {
+            color: #999;
+            height: 30px;
+            line-height: 30px;
+            float: left;
+            display: block;
+        }
+
+        .right .recommend .retop .reright {
+            color: #999;
+            height: 30px;
+            line-height: 30px;
+            float: right;
+            display: block;
+            text-decoration-line: none;
+        }
+
+            .right .recommend .retop .reright img {
+                width: 14px;
+                height: 14px;
+            }
+
+    .right .recommend .recontent {
+        width: 300px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+
+    .right .recommend .reimage {
+        width: 50px;
+        height: 50px;
+        border-radius: 25px;
+        float: left;
+    }
+
+    .right .recommend .recentre {
+        height: 50px;
+        float: left;
+        padding-left: 10px;
+    }
+
+        .right .recommend .recentre .name {
+            font-size: 14px;
+            display: block;
+            height: 25px;
+            line-height: 25px;
+            color: #2e2e2e;
+            text-decoration-line: none;
+        }
+
+        .right .recommend .recentre .jianjie {
+            font-size: 12px;
+            display: block;
+            height: 25px;
+            line-height: 25px;
+            color: #999;
+        }
+
+    .right .recommend .getlike {
+        font-size: 14px;
+        color: #42c02e;
+        line-height: 50px;
+        margin-right: 5px;
+        display: block;
+        float: right;
+        text-decoration-line: none;
+    }

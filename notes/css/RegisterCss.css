@@ -1,0 +1,113 @@
+﻿
+body {
+    background-color: #f1f1f1;
+}
+
+.register {
+    border-radius:5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    background-color: #ffffff;
+    width: 400px;
+    position: absolute;
+    margin-left: -300px;
+    top: 80px;
+    left: 50%;
+    right: 300px;
+    padding: 0 50px 30px 50px;
+}
+    .register .title {
+        height:30px;
+        width:400px;
+        font-size:24px;
+        line-height:30px;
+        text-align:center;
+        margin:10px 0px 20px 0;
+    }
+
+    .register .text {
+        color: #ff5b5b;
+        display: block;
+        width: 400px;
+        height: 20px;
+        max-height: 0px;
+        overflow: hidden;
+        transition: max-height 0.1s linear;
+    }
+
+        .register #pwdhint {
+        font-size:14px;
+        line-height:26px;
+        height: 78px;
+        color: black;
+        transition: max-height 0.1s linear;
+    }
+
+    .register #pwdhint img {
+        width: 17px;
+        height: 17px;
+        padding: 5px 5px 4px 0;
+        float: left;
+    }
+
+    .register .userid {
+        width: 384px;
+        height: 30px;
+        border: 1px solid #808080;
+        border-radius: 3px;
+        padding: 9px 0 9px 14px;
+    }
+
+    .register .userpwd {
+        width: 384px;
+        height: 30px;
+        border: 1px solid #808080;
+        border-radius: 3px;
+        padding: 9px 0 9px 14px;
+        margin-top: 15px;
+    }
+
+    .register .userangin {
+    width: 384px;
+    height: 30px;
+    border: 1px solid #808080;
+    border-radius: 3px;
+    padding: 9px 0 9px 14px;
+    margin-top: 15px;
+    }
+    .register .code {
+        width: 400px;
+        height: 50px;
+        margin-top: 15px;
+    }
+        .register .code .codecontent {
+            width: 140px;
+            height: 30px;
+            border: 1px solid #808080;
+            float: left;
+            padding: 9px 0 9px 14px;
+            border-radius:3px 0 0 3px;
+        }
+        .register .code .codeimage {
+            width: 98px;
+            height: 48px;
+            float: left;
+            overflow:hidden;
+            border:1px solid #808080;
+
+        }
+
+
+    .register .zhuce {
+        cursor:pointer;
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #3083ff;
+        width: 400px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+        .register .zhuce:hover {
+            background-color: #3066ff;
+        }

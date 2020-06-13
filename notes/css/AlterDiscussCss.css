@@ -1,0 +1,104 @@
+﻿.commentbox {
+    width: 800px;
+    padding-top: 20px;
+}
+
+    .commentbox .comuserimage {
+        width: 60px;
+        display: block;
+        float: left;
+    }
+
+        .commentbox .comuserimage img {
+            width: 58px;
+            height: 58px;
+            border-radius: 29px;
+            border:1px solid #999;
+        }
+
+    .commentbox .comment {
+        width: 740px;
+        float: right;
+    }
+    
+    .commentbox .comment .divs {
+        width: 740px;
+        margin-bottom:14px;
+    }
+    .commentbox .comment .divs span {
+        font-weight:600;
+    }
+     .commentbox .comment .divs:first-child span {
+        margin-left:200px;
+    }
+        .commentbox .comment .compage {
+            height: 30px;
+            line-height: 30px;
+            width: 200px;
+        }
+        .commentbox .comment .divs:nth-child(2) span {
+            margin-left: 200px;
+        }
+
+        .commentbox .comment .comname {
+            height: 30px;
+            line-height: 30px;
+            width: 200px;
+        }
+        .commentbox .comment .divs:nth-child(3) span {
+            display: block;
+            width: 80px;
+            float: left;
+            height: 90px;
+            text-align: center;
+            line-height: 90px;
+        }
+    .commentbox .comment .comcontext {
+        float:right;
+        line-height: 30px;
+        width: 640px;
+        height:90px;
+        resize:none;
+        padding:5px;
+    }
+    .commentbox .comment .divs:nth-child(4) span {
+        margin-left:10px;
+    }
+    .commentbox .comment .comgetlike {
+        line-height: 30px;
+        width: 60px;
+        height: 30px;
+        padding-left:8px;
+        margin-left:10px;
+    }
+
+    .butpage {
+        height: 32px;
+        width: 320px;
+        margin: 10px auto 0 auto;
+    }
+
+    .butpage .butcss {
+        height: 30px;
+        font-size: 16px;
+        line-height: 30px;
+        width: 90px;
+        text-align: center;
+        border: 1px solid #ea6f5a;
+        display: block;
+        float: left;
+        background-color: #fff;
+        cursor: pointer;
+        color: #ea6f5a;
+    }
+
+        .butpage .butcss:first-child {
+            margin-right: 16px;
+        }
+        .butpage .butcss:nth-child(3) {
+            margin-right: 16px;
+        }
+
+        .butpage .butcss:hover {
+            background-color: rgba(236,97,73,.1);
+        }

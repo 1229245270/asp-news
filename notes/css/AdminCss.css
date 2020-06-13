@@ -1,0 +1,193 @@
+﻿.container {
+    margin: 0 auto 0 auto;
+    width: 1000px;
+}
+
+.container .left {
+    width: 660px;
+    height:270px;
+    float: left;
+    margin-right: 40px;
+}
+
+.left .slideshow {
+    width: 660px;
+    height: 270px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+}
+
+    .left .slideshow .slidebox {
+        width: 2640px;
+        height: 270px;
+    }
+
+        .left .slideshow .slidebox a {
+            display: block;
+            width: 660px;
+            height: 270px;
+            float: left;
+        }
+
+            .left .slideshow .slidebox a img {
+                width: 660px;
+                height: 270px;
+            }
+
+    .left .slideshow ol {
+        width: 55px;
+        height: 20px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -27px;
+    }
+
+        .left .slideshow ol li {
+            float: left;
+            font-size: 18px;
+            line-height: 20px;
+            margin-left: 11px;
+            list-style: disc;
+        }
+
+            .left .slideshow ol li:first-child {
+                margin-left: 20px;
+            }
+
+.liaction {
+    color: red;
+}
+
+.left .slideshow .btn {
+    position: absolute;
+    width: 40px;
+    height: 50px;
+    background-color: rgba(0, 0, 0,.4);
+    font-size: 20px;
+    line-height: 50px;
+    text-align: center;
+    color: #fff;
+    top: 50%;
+    margin-top: -20px;
+    cursor: pointer;
+}
+
+.left .slideshow .btn-left {
+    left: 0px;
+}
+
+.left .slideshow .btn-right {
+    right: 0px;
+}
+
+.container .right {
+    float: left;
+    width: 300px;
+    height:270px;
+}
+
+.right .notice {
+    display: block;
+    width: 300px;
+    line-height: 60px;
+    height: 60px;
+    color: #000;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    padding-bottom:20px;
+}
+
+.right .tblock {
+    display: block;
+    line-height: 50px;
+    width: 300px;
+    height: 50px;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration-line: none;
+    background-color:rgba(0,0,0,0.2);
+    margin-bottom:20px;
+    border-radius:5px;
+}
+.right .tblock:hover {
+    background-color: rgba(0,0,0,0.3);
+}
+    .right .tblock img {
+        float: left;
+        width: 30px;
+        height: auto;
+        margin: 10px 10px 10px 20px;
+    }
+
+    .right #block3 {
+        margin-bottom: 0px;
+    }
+
+.admincentent {
+    margin-top: 20px;
+}
+.admincentent .adminleft {
+    float: left;
+    width: 180px;
+    z-index:50;
+}
+    .admincentent .adminleft .leftul {
+        list-style-type: none;
+    }
+        .admincentent .adminleft .leftul .leftli {
+        }
+            .admincentent .adminleft .leftul .leftli a {
+                background-color: #fff;
+                display: block;
+                color: #333;
+                width: 160px;
+                height: 50px;
+                line-height: 50px;
+                text-decoration-line: none;
+                padding-left:20px;
+            }
+            .admincentent .adminleft .leftul .leftli .lefta {
+                width: 180px;
+                padding-left: 0px;
+                text-align: left;
+            }
+            .admincentent .adminleft .leftul .leftli .lefta img:first-child {
+                margin:13px 10px 13px 10px;
+                height:24px;
+                width:auto;
+                float:left;
+            }
+            .admincentent .adminleft .leftul .leftli .lefta img:nth-child(2) {
+                margin: 13px 10px 13px 10px;
+                height: 24px;
+                width: auto;
+                float: right;
+                transition: transform 0.5s;
+            }
+            .admincentent .adminleft .leftul .leftli a:hover {
+                    background-color: #f0f0f0;
+                }
+            .admincentent .adminleft .leftul .leftli ul {
+                list-style-type: none;
+                width: 180px;
+                z-index: 30;
+                height: 0px;
+                overflow:hidden;
+                transition:height 0.5s;
+            }
+            .admincentent .adminleft .leftul .leftli:hover ul {
+                height: 150px;
+            }
+            .admincentent .adminleft .leftul .leftli:hover .lefta img:nth-child(2) {
+                transform:rotate(90deg);
+            }
+            .admincentent .adminleft .aleftul .leftli ul li {
+            }
+.admincentent .adminright {
+    float:right;
+    width:800px;
+}

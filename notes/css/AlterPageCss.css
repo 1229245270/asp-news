@@ -1,0 +1,288 @@
+﻿.acentre {
+    width: 818px;
+    padding: 20px 9px 20px 9px;
+    border: 1px solid #999;
+    background-color: #efefef;
+}
+    .acentre .notetitle {
+        display:block;
+        width:800px;
+        font-size:36px;
+        line-height:50px;
+        font-weight:500;
+    }
+    .acentre .notejianjie {
+        width:800px;
+        margin:20px 0 20px 0;
+        height:50px;
+    }
+        .acentre .notejianjie .noteleft {
+            width:50px;
+            height:50px;
+            border-radius:25px;
+            float:left;
+            margin-right:20px;
+        }
+        .acentre .notejianjie .noteright {
+            width: 730px;
+            height: 50px;
+            float: left;
+        }
+            .acentre .notejianjie .noteright .ntop {
+                height:25px;
+                width:730px;
+            }
+            .acentre .notejianjie .noteright .ntop .nname{
+                display:block;
+                height: 25px;
+                line-height:25px;
+                font-size:16px;
+                float:left;
+                color:#000;
+                margin-right:8px;
+                text-decoration-line:none;
+            }
+            .acentre .notejianjie .noteright .ntop .ngetlike {
+                display: block;
+                height: 18px;
+                margin: 4px 0 3px 0;
+                padding:0 8px 0 8px;
+                line-height: 18px;
+                font-size: 12px;
+                float: left;
+                border: none;
+                border-radius: 9px;
+                background-color: #3db922;
+                color:#fff;
+                cursor:pointer;
+            }
+            .acentre .notejianjie .noteright .ntop .ngetlike:hover {
+                background-color: #3db000;
+            }
+            .acentre .notejianjie .noteright .njieshao {
+                color:#333;
+                font-size:13px;
+
+            }
+
+
+    .acentre .notecontent {
+        display:block;
+        width:800px;
+        line-height:24px;
+        font-size:13px;
+    }
+
+/*   管理员按钮    */
+.acentre .adminblock {
+    width:800px;
+    height:40px;
+    margin:20px 0 20px 0;
+}
+
+    .acentre .adminblock .abut {
+        display: block;
+        float: left;
+        margin: auto;
+        height: 30px;
+        width: 80px;
+        color: #38f;
+        font-size: 13px;
+        cursor: pointer;
+        border: 1px solid #666;
+        color: #38f;
+        background-color: #fff;
+        margin: 8px 10px 0 0;
+        text-decoration-line: none;
+        line-height: 30px;
+        text-align: center;
+    }
+
+        .acentre .adminblock .abut:hover {
+            border: 1px solid red;
+            color: red;
+        }
+.adminblock .jubao {
+    float:right;
+    display:block;
+    font-size:14px;
+    line-height:40px;
+    height:40px;
+    color:#333;
+
+}
+
+
+    .acentre .userjianjie {
+        width: 760px;
+        height: 60px;
+        padding: 20px;
+        border: 1px solid #999;
+    }
+        .acentre .userjianjie img {
+            width:60px;
+            height:60px;
+            border-radius:30px;
+            margin-right:20px;
+            display:block;
+            float:left;
+        }
+        .acentre .userjianjie .usercentre {
+            width: 580px;
+            height: 60px;
+            float: left;
+        }
+        .acentre .userjianjie .username {
+            display:block;
+            height:30px;
+            line-height:30px;
+            color:#333;
+            font-size:14px;
+            text-decoration-line:none;
+        }
+        .acentre .userjianjie .ujieshao {
+            display: block;
+            height: 30px;
+            line-height: 30px;
+            color: #666;
+            font-size: 12px;
+        }
+        .acentre .userjianjie .ugetlike {
+            width: 100px;
+            height: 40px;
+            border-radius: 20px;
+            float: left;
+            margin: 10px 0 10px 0;
+            border: none;
+            background-color: #3db922;
+            color:#fff;
+            cursor:pointer;
+        }
+        .acentre .userjianjie .ugetlike:hover {
+            background-color: #3db000;
+        }
+    .acentre .notefoot {
+        width:800px;
+        height:50px;
+        margin:30px 0 60px 0;
+    }
+        .acentre .notefoot a {
+            float: right;
+            padding: 12px;
+            height: 26px;
+            line-height: 26px;
+            display: block;
+            border-radius: 25px;
+            border: 1px solid #9b9b9b;
+            text-decoration-line: none;
+            margin-left: 15px;
+            font-size: 14px;
+            color: #9b9b9b;
+        }
+            .acentre .notefoot a:first-child {
+                border-color: #EA6F5A;
+                float: left;
+                color: #EA6F5A;
+                padding-right: 20px;
+                margin-left: 0px;
+            }
+            .acentre .notefoot a:hover {
+                background-color:#eee;
+            }
+            .acentre .notefoot a:first-child:hover {
+                background-color: #ffded9;
+            }
+        .acentre .notefoot a img{
+            display:block;
+            float:left;
+            width:26px;
+            height:26px;
+        }
+        .acentre .notefoot a:first-child img {
+            width: 20px;
+            height: 20px;
+            margin:3px 10px 3px 10px;
+        }
+
+
+    .acentre .comtitle {
+        width:800px;
+        height:40px;
+        line-height:40px;
+        color:#000;
+        font-weight:500;
+        font-size:24px;
+        margin-bottom:20px;
+    }
+    .acentre .commentbox {
+        width: 800px;
+        padding-top:20px;
+        border-top:1px solid #999;
+    }
+    .acentre .comuserimage {
+        width:40px;
+        display:block;
+        float:left;
+    }
+    .acentre .comuserimage img {
+        width: 40px;
+        height:40px;
+        border-radius:20px;
+    }
+    .acentre .comment {
+        width:740px;
+        float:right;
+    }
+        .acentre .comment .comnane {
+            display:block;
+            width:740px;
+            height:20px;
+            line-height:20px;
+        }
+        .acentre .comment .comjianjie {
+            display: block;
+            width: 740px;
+            height: 20px;
+            font-size:12px;
+            line-height:20px;
+            color:#666;
+        }
+        .acentre .comment .comcontent {
+            display: block;
+            width: 740px;
+            line-height:20px;
+            margin-top:10px;
+        }
+
+        .acentre .comment .comfoot {
+            width: 740px;
+            height: 40px;
+        }
+            .acentre .comment .comfoot a {
+                display:block;
+                float:left;
+                padding-left:22px;
+                margin-top:10px;
+                height:20px;
+                margin-right:10px;
+                line-height:20px;
+                font-size:14px;
+                color:#666;
+                text-decoration-line:none;
+                background-size: 20px 20px;
+                background-repeat:no-repeat;
+            }
+            .acentre .comment .comfoot a:first-child {
+                background-image: url(../images/ArticleImages/getlike.png);
+            }
+            .acentre .comment .comfoot a:first-child:hover {
+                background-image: url(../images/ArticleImages/getlikehover.png);
+                color: #515151;
+            }
+            .acentre .comment .comfoot a:nth-child(2) {
+                background-image: url(../images/ArticleImages/comment.png);
+            }
+            .acentre .comment .comfoot a:nth-child(2):hover {
+                background-image: url(../images/ArticleImages/commenthover.png);
+                color: #515151;
+            }

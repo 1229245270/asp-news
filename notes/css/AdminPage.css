@@ -1,0 +1,171 @@
+﻿
+.leftcontent {
+    width: 800px;
+}
+
+.leftcontent .leftbox {
+    width: 800px;
+    padding: 20px 0 20px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.leftbox .notepage {
+    width: 630px;
+    float: left;
+    margin-right: 20px;
+}
+
+    .leftbox .notepage .notetitle {
+        display: block;
+        width: 630px;
+        line-height: 30px;
+        font-size: 18px;
+        font-weight: bold;
+        color: #2f2f2f;
+        text-decoration-line: none;
+        margin-bottom: 5px;
+    }
+
+        .leftbox .notepage .notetitle:hover {
+            text-decoration-line: underline;
+        }
+
+    .leftbox .notepage .notecontent {
+        display: block;
+        width: 630px;
+        line-height: 24px;
+        font-size: 13px;
+        color: #666;
+    }
+
+    .leftbox .notepage .notefoot {
+        width: 630px;
+        height: 20px;
+        margin-top: 10px;
+    }
+
+.notefoot a {
+    display: block;
+    height: 20px;
+    text-decoration-line: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: #999;
+    float: left;
+    margin-right: 14px;
+}
+
+.notefoot .footname {
+}
+
+.notefoot .footcomment {
+}
+
+    .notefoot .footcomment img {
+        padding: 5px 3px 3px 0;
+        width: 12px;
+        height: 12px;
+        float: left;
+    }
+
+.notefoot .footgetlike {
+}
+
+    .notefoot .footgetlike img {
+        padding: 4px 3px 4px 0;
+        width: 12px;
+        height: 12px;
+        float: left;
+    }
+
+.notefoot .footdate {
+    float: right;
+    margin: 0;
+}
+
+.notepage .pagebut {
+    color: #38f;
+    width: 80px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #666;
+    cursor: pointer;
+    background-color: #fff;
+}
+.notepage .pagebut:hover {
+    color: red;
+    border: 1px solid red;
+}
+
+
+.leftbox .footimg {
+    width: 150px;
+    height: 100px;
+    overflow: hidden;
+    display: block;
+    border-radius: 5px;
+}
+
+.leftbox img {
+    width: 150px;
+    height: auto;
+    float: left;
+}
+
+.leftcontent .leftbox .abut {
+    display: block;
+    float: left;
+    margin: auto;
+    height: 30px;
+    width: 80px;
+    color: #2f2f2f;
+    font-size: 13px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    color: #38f;
+    background-color: #fff;
+    margin: 8px 10px 0 0;
+    text-decoration-line:none;
+    line-height:30px;
+    text-align:center;
+}
+    .leftcontent .leftbox .abut:hover {
+        background-color: aliceblue;
+        border: 1px solid #666;
+        color:red;
+    }
+.leftcontent .page {
+    height: 30px;
+    width: 605px;
+    padding: 10px 195px 30px 0;
+    font-size: 12px;
+    color: #666;
+    line-height: 30px;
+}
+
+    .leftcontent .page .pagenum {
+        width: 180px;
+        float: left;
+        height: 30px;
+        display: block;
+    }
+
+    .leftcontent .page .pagebut {
+        display: block;
+        float: left;
+        margin: auto;
+        height: 30px;
+        width: 80px;
+        color: #2f2f2f;
+        font-size: 13px;
+        cursor: pointer;
+        border: 1px solid #ccc;
+        color: #38f;
+        background-color: #fff;
+        margin: 8px 10px 0 0;
+    }
+
+.leftcontent .page .pagebut:hover {
+    background-color: aliceblue;
+    border: 1px solid #666;
+}

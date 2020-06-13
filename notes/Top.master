@@ -1,0 +1,308 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Top.master.cs" Inherits="Top" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+<style>
+* {
+margin: 0px;
+padding: 0px;
+}
+
+.clearfloat {
+    clear:both;
+    width:0;
+    height:0;
+}
+
+.top {
+    z-index:99;
+    width:100%;
+    height: 60px;
+    position:fixed;
+    background-color:#fff;
+    border-bottom:1px solid #e9e9e9;
+}
+
+
+.paddingtop {
+   padding-top:80px;
+}
+
+.top .position {
+    width:100%;
+    height:60px;
+    position:relative;
+}
+    .top .position a {
+        display: block;
+        text-decoration-line:none;
+    }
+
+    .position .logo {
+        width:100px;
+        height:60px;
+        font-size:26px;
+        color:#ec6149;
+        text-align:center;
+        line-height:60px;
+        display:block;
+        
+    }
+
+    /* margin-left多给20px给.shouye作为内边距  */
+    .position .centre {
+        z-index:98;
+        background-color:#fff;
+        height:60px;
+        width:1000px;
+        position:absolute;
+        top:0px;
+        left:50%;
+        margin-left:-520px;
+    }
+    .position .centre .shouye,.position .centre .keeplove,.position .centre .my {
+        float:left;
+        padding:0 20px 0 20px;
+        margin-right:10px;
+        height:60px;
+        font-size:16px;
+        line-height:60px;
+        color:#ea6f5a;
+    }
+    .position .centre .keeplove, .position .centre .my {
+        color:#333;
+    }
+    .position .centre .keeplove:hover, .position .centre .my:hover {
+        background-color:rgba(2,0,0,.05);
+    }
+        
+    /*    给img留出20px，否则img往下跑   */
+    .position .centre .searchbox {
+        float:left;
+        width:260px;
+        height:60px;
+        margin-right:20px;
+        position:relative;
+    }
+        .position .centre .searchbox .search {
+            float:left;
+            background-color:#eee;
+            margin:12px 0px 12px 0;
+            padding:10px 40px 10px 20px;
+            width:100px;
+            height:16px;
+            border-radius:18px;
+            border:none;
+            transition:width linear 0.3s;
+        }
+
+        .position .centre .searchbox .searchimage {
+            float:left;
+            display:block;
+            width:20px;
+            height:20px;
+            overflow:hidden;
+            left:0;
+            top:50%;
+            margin-top:-10px;
+            left:-30px;
+            position:relative;
+
+        }
+
+    .position .right {
+        height:60px;
+        position:absolute;
+        top:0px;
+        right:0px;
+    }
+        .position .right .Aa {
+            line-height:60px;
+            float:left;
+            padding:0 20px 0 20px;
+            height:60px;
+            font-size:16px;
+            color:#666;
+            margin-right:20px;
+        }
+        .position .right .denglu {
+            line-height:60px;
+            float:left;
+            padding:0 20px 0 20px;
+            height:60px;
+            font-size:16px;
+            color:#666;
+            margin-right:20px;
+        }
+        .position .right .denglu:hover {
+            background-color:rgba(2,0,0,.05);
+        }
+
+        .position .right .zhuce {
+            color:#ea6f5a;
+            line-height:40px;
+            float:left;
+            padding:0 25px 0 25px;
+            margin:10px 30px 10px 0;
+            height:40px;
+            font-size:16px;
+            border-radius:20px;
+            border:1px solid #ea6f5a;
+        }
+        .position .right .zhuce:hover {
+            background-color:rgba(236,97,73,.05);
+        }
+        .position .right .hava {
+            float:left;
+            height:60px;
+            cursor:default;
+            margin-right:20px;
+            position:relative;
+        }
+        .position .right .hava img {
+            float:left;
+            margin:10px 10px 10px 10px;
+            height:40px;
+            width:40px;
+            border-radius:20px;
+        }
+        .position .right .hava .name {
+            line-height:60px;
+            float:left;
+            height:60px;
+            padding-right:10px;
+        }
+        .position .right .hava:hover .havaitem {
+            visibility:visible;
+        }
+
+        .position .right .hava .havaitem {
+            visibility:hidden;
+            position:absolute;
+            top:60px;
+            left:0px;
+            width:150px;
+            box-shadow: 0 0 10px rgba(0,0,0,.3);
+            background-color:#fff;
+            z-index:98;
+        }
+        .position .right .hava .havaitem a {
+            font-weight:500;
+            height:50px;
+            width:150px;
+            display:block;
+            text-decoration-line:none;
+            color:#000;
+            line-height:50px;
+            margin-top:4px;
+            font-size:14px;
+        }
+        .position .right .hava .havaitem a img {
+            float:left;
+            height:20px;
+            width:auto;
+            margin:15px 10px 15px 15px;
+        }
+        .position .right .hava .havaitem a:hover {
+            background-color:#eee;
+        }
+
+        .position .right .write {
+            float:left;
+            padding:0 25px 0 25px;
+            margin:10px 0 10px 0;
+            background-color:#ec6149;
+            border-radius:20px;
+            height:40px;
+            line-height:40px;
+            font-size:16px;
+            color:#fff;
+        }
+            
+        .position .right .write:hover {
+            background-color:#ec3333;
+        }
+
+</style>
+<script type="text/javascript" src="<%= Page.ResolveClientUrl("~/js/jquery-3.3.1.min.js") %>"></script>
+</head>
+<body>
+<form id="form1" runat="server">
+  <div class="top">
+  <div class="position">
+    <a href="<%= Page.ResolveClientUrl("~/UserHome/HomePage.aspx") %>" class="logo">随 笔</a>
+    <div class="centre">
+      <a href="<%= Page.ResolveClientUrl("~/UserHome/HomePage.aspx") %>" class="shouye">首页</a>
+      <a href="<%= Page.ResolveClientUrl("~/UserHome/PersonalCenter.aspx") %>" class="keeplove">关注</a>
+      <a href="<%= Page.ResolveClientUrl("#") %>" class="my">我的</a>
+      <div class="searchbox">
+        <asp:TextBox ID="search" CssClass="search" runat="server"  placeholder="搜索"></asp:TextBox>
+          <asp:LinkButton CssClass="searchimage" ID="LinkButton1" runat="server" OnClick="LinkButton1_Click"><img  src="<%= Page.ResolveClientUrl("~/images/topImages/search.png") %>" /></asp:LinkButton>
+        <div class="clearfloat"></div>
+      </div>
+      <div class="clearfloat"></div>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $(".search").focus(function () {
+                    $(".search").css("width", "180px");
+                });
+                $(".search").blur(function () {
+                    $(".search").css("width", "100px");
+                });
+            });
+
+        </script>
+
+        <div class="right">
+            <a href="#" class="Aa">Aa</a>
+            <a href="<%= Page.ResolveClientUrl("~/Login.aspx") %>" class="denglu">登录</a>
+            <a href="<%= Page.ResolveClientUrl("~/Register.aspx") %>" class="zhuce">注册</a>
+            <div class="hava">
+                <img runat="server" id="userimage" />
+                <asp:Label CssClass="name" ID="Name" runat="server"></asp:Label>
+                <div class="havaitem">
+                    <a href="<%= Page.ResolveClientUrl("~/UserHome/PersonalCenter.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/topImages/myhome.png") %>" />我的主页</a>
+                    <a href="<%= Page.ResolveClientUrl("~/Login.aspx") %>"><img src="<%= Page.ResolveClientUrl("~/images/topImages/myhome.png") %>" />切换用户</a>
+                    <a href="<%= Page.ResolveClientUrl("~/UserHome/HomePage.aspx?se=0") %>" ><img src="<%= Page.ResolveClientUrl("~/images/topImages/logout.png") %>" />退出</a>
+                    
+                </div>
+                <div class="clearfloat"></div>
+            </div>
+            <a href="<%= Page.ResolveClientUrl("~/UserHome/WritePage.aspx") %>" class="write">写文章</a>
+            <div class="clearfloat"></div>
+        </div>
+    </div>
+  </div>
+    <%
+        if (Session["userid"] == null)
+        { %>
+        <script type="text/javascript">
+            $(".keeplove").hide();
+            $(".my").hide();
+            $(".denglu").show();
+            $(".zhuce").show();
+            $(".hava").hide();
+        </script>
+        <% }else { %>
+        <script type="text/javascript">
+            $(".keeplove").show();
+            $(".my").show();
+            $(".denglu").hide();
+            $(".zhuce").hide();
+            $(".hava").show();
+        </script>
+        <%   } %>
+    </div>
+    <div class="paddingtop">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+</form>
+</body>
+</html>

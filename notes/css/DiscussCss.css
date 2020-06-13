@@ -1,0 +1,107 @@
+﻿.commentbox {
+    width: 800px;
+    padding-top: 20px;
+    border-top: 1px solid #999;
+}
+
+.commentbox .comuserimage {
+    width: 40px;
+    display: block;
+    float: left;
+}
+
+    .commentbox .comuserimage img {
+        width: 40px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+.commentbox .comment {
+    width: 740px;
+    float: right;
+}
+
+    .commentbox .comment .comnane {
+        display: block;
+        width: 740px;
+        height: 20px;
+        line-height: 20px;
+    }
+
+    .commentbox .comment .comjianjie {
+        display: block;
+        width: 740px;
+        height: 20px;
+        font-size: 12px;
+        line-height: 20px;
+        color: #666;
+    }
+
+    .commentbox .comment .comcontent {
+        display: block;
+        width: 740px;
+        line-height: 20px;
+        margin-top: 10px;
+    }
+
+    .commentbox .comment .comfoot {
+        width: 740px;
+        height: 50px;
+    }
+
+        .commentbox .comment .comfoot a {
+            display: block;
+            float: left;
+            padding-left: 22px;
+            margin-top: 10px;
+            height: 20px;
+            margin-right: 10px;
+            line-height: 20px;
+            font-size: 14px;
+            color: #666;
+            text-decoration-line: none;
+            background-size: 20px 20px;
+            background-repeat: no-repeat;
+        }
+
+            .commentbox .comment .comfoot a:first-child {
+                background-image: url(../images/ArticleImages/getlike.png);
+            }
+
+                .commentbox .comment .comfoot a:first-child:hover {
+                    background-image: url(../images/ArticleImages/getlikehover.png);
+                    color: #515151;
+                }
+
+            .commentbox .comment .comfoot a:nth-child(2) {
+                background-image: url(../images/ArticleImages/comment.png);
+            }
+
+                .commentbox .comment .comfoot a:nth-child(2):hover {
+                    background-image: url(../images/ArticleImages/commenthover.png);
+                    color: #515151;
+                }
+
+        .commentbox .comment .comfoot .abut {
+            display: block;
+            float: left;
+            margin: auto;
+            height: 30px;
+            width: 80px;
+            color: #38f;
+            font-size: 13px;
+            cursor: pointer;
+            border: 1px solid #666;
+            color: #38f;
+            background-color: #fff;
+            margin: 8px 10px 0 0;
+            padding: 0px;
+            text-decoration-line: none;
+            line-height: 30px;
+            text-align: center;
+        }
+
+        .commentbox .comment .comfoot .abut:hover {
+            border: 1px solid red;
+            color: red;
+        }

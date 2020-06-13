@@ -1,0 +1,85 @@
+﻿body {
+    background-color: #f1f1f1;
+}
+
+.login {
+    border-radius: 5px;
+    box-shadow: 0 0 8px rgba(0,0,0,.1);
+    background-color: #ffffff;
+    width: 400px;
+    position: absolute;
+    margin-left: -300px;
+    top: 80px;
+    left: 50%;
+    right: 300px;
+    padding: 0 50px 30px 50px;
+}
+
+    .login .title {
+        height: 30px;
+        width: 400px;
+        font-size: 24px;
+        line-height: 30px;
+        text-align: center;
+        margin: 20px 0px 30px 0;
+    }
+
+    .login .userid {
+        width: 384px;
+        height: 30px;
+        border: 1px solid #808080;
+        border-radius: 3px;
+        padding: 9px 0 9px 14px;
+        margin-bottom:20px;
+    }
+
+    .login .userpwd {
+        width: 384px;
+        height: 30px;
+        border: 1px solid #808080;
+        border-radius: 3px;
+        padding: 9px 0 9px 14px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    .login .code {
+        width: 400px;
+        height: 50px;
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+        .login .code .codecontent {
+            width: 140px;
+            height: 30px;
+            border: 1px solid #808080;
+            float: left;
+            padding: 9px 0 9px 14px;
+            border-radius: 3px 0 0 3px;
+        }
+
+        .login .code .codeimage {
+            width: 98px;
+            height: 48px;
+            float: left;
+            overflow: hidden;
+            border: 1px solid #808080;
+        }
+
+
+    .login .denglu {
+        cursor: pointer;
+        font-size: 24px;
+        color: #ffffff;
+        background-color: #3083ff;
+        width: 400px;
+        height: 50px;
+        border: none;
+        border-radius: 5px;
+        margin-top: 15px;
+    }
+
+        .login .denglu:hover {
+            background-color: #3066ff;
+        }
